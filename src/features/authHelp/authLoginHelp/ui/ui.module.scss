@@ -1,0 +1,21 @@
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+
+.link {
+    font-size: 14px;
+    font-family: 'SF_Regular', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        transition: all .3s;
+        color: #3579F9;
+    }
+}

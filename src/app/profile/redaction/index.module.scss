@@ -1,0 +1,300 @@
+.wrap {
+    padding: 0px 0px 30px 20px;
+    @media (max-width: 900px) {
+        padding: 0px 6px 30px 6px;
+    }
+}
+.section {
+    min-height: 436px;
+}
+
+.topMobile {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+
+    .title {
+        font-size: 20px;
+        letter-spacing: 0.7px;
+        font-family: "SF_Medium";
+        padding-bottom: 15px;
+    }
+
+    .topright {
+        display: flex;
+        flex-direction: column;
+
+        .inputbtn {
+            padding: 8.7px 20px;
+            background-color: white;
+            input {
+                margin-left: 10px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                width: 100%;
+            }
+            width: 100%;
+            border-radius: 35px;
+            margin-bottom: 6px;
+        }
+
+        .sort {
+            cursor: pointer;
+            color: white;
+            background: #a1a1af;
+            display: flex;
+            height: 40px;
+            gap: 8px;
+            border-radius: 35px;
+            width: 157px;
+            padding: 9px 25px 9px 25px;
+            margin-right: 9px;
+        }
+
+        .addbtn {
+            cursor: pointer;
+            background-color: #3579f8;
+            height: 40px;
+            color: white;
+            svg {
+                margin-right: 5px;
+            }
+            gap: 8px;
+            border-radius: 35px;
+            width: 157px;
+            padding: 9px 25px 9px 25px;
+            margin-left: 9px;
+        }
+        .btns {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 16px;
+        }
+    }
+}
+
+.top {
+    padding-left: 8px;
+    padding-bottom: 26px;
+    padding-right: 35px;
+
+    .title {
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: 0.7px;
+    }
+
+    .topright {
+        display: flex;
+
+        .sort {
+            cursor: pointer;
+            color: white;
+            border-radius: 15px 0px 0px 15px;
+            background: #a1a1af;
+            display: flex;
+            height: 40px;
+            padding: 11px 18px 11px 18px;
+            display: flex;
+            gap: 6px;
+        }
+
+        .inputbtn {
+            height: 100%;
+            padding: 8.7px 20px;
+            border-radius: 0px 15px 15px 0px;
+            background-color: white;
+            border: 1px solid rgba(53, 121, 248, 0.5);
+
+            input {
+                margin-left: 10px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+            }
+        }
+
+        .addbtn {
+            cursor: pointer;
+            margin-left: 20px;
+            border-radius: 15px;
+            background-color: #3579f8;
+            height: 40px;
+            padding: 0px 15px;
+            color: white;
+
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.titleL {
+    font-size: 30px;
+    font-weight: 600;
+    @media (max-width: 900px) {
+        font-size: 22px;
+    }
+    @media (max-width: 420px) {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+    padding-bottom: 7px;
+}
+
+.all {
+    display: flex;
+    cursor: pointer;
+    gap: 6px;
+    align-items: center;
+    &__text {
+        color: #3579f8;
+        font-feature-settings:
+            "clig" off,
+            "liga" off;
+        font-family: "SF_Medium";
+        font-size: 16px;
+    }
+}
+
+.blockText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 35px;
+}
+
+.materialMobile {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.materials {
+    padding-bottom: 19px;
+}
+
+.skeletonItem {
+    min-width: 292px;
+    max-width: 292px;
+    height: 310px;
+}
+
+.skeletons {
+    padding-bottom: 7px;
+    margin-bottom: 39px;
+    display: flex;
+    gap: 24px;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding-top: 20px;
+
+    &::-webkit-scrollbar {
+        width: 0.8em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #3579f8;
+        border: 3px solid white;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        cursor: pointer !important;
+    }
+}
+
+.skeleton {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+}
+
+.news {
+    display: flex;
+    gap: 24px;
+
+    overflow: hidden;
+    overflow-x: scroll;
+    padding-bottom: 7px;
+
+    &::-webkit-scrollbar {
+        width: 0.8em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #3579f8;
+        border: 3px solid white;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        cursor: pointer !important;
+    }
+}
+
+.item {
+    max-width: 292px;
+    min-width: 292px;
+    height: 310px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 25px 10px 20px;
+    
+
+    &Top {
+        p {
+            color: #fff;
+            font-family: "SF_Bold";
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        span {
+            color: #fff;
+            text-align: center;
+            font-family: "SF_Bold";
+            font-size: 8px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.96px;
+        }
+    }
+
+    &bottom {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+    &bottombtn {
+        color: black;
+        background-color: white;
+        padding: 8px 20px;
+        font-size: 13px;
+        border-radius: 6px;
+    }
+}
+
+.titleN {
+    font-size: 30px;
+    font-weight: 600;
+    @media (max-width: 900px) {
+        font-size: 22px;
+    }
+    @media (max-width: 420px) {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+    padding-bottom: 24px;
+}

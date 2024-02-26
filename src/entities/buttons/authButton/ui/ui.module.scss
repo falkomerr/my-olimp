@@ -1,0 +1,45 @@
+$btnBgColor-active: #222222;
+$btnBgColor-hover: #000;
+$btnTextColor-active: #fff;
+$btnBgColor-disabled: #F2F2F2;
+$btnTextColor-disabled: #222;
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    border: none;
+
+    font-family: 'SF_Regular', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: $btnTextColor-active;
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+    width: 100%;
+}
+
+.button-active {
+    background: $btnBgColor-active;
+}
+
+.button-disabled {
+    background: $btnBgColor-disabled;
+
+    color: $btnTextColor-disabled;
+}
+
+.isHover {
+    background: $btnBgColor-hover !important;
+}
+
+.next-isHover {
+    background: #6a9eff !important;
+}

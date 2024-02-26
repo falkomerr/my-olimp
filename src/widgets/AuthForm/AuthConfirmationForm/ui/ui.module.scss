@@ -1,0 +1,86 @@
+$bgScreenColor: #f2f2f2;
+$bgFormColor: #fff;
+
+.wrap {
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background-color: $bgFormColor;
+    min-width: 460px;
+    max-width: 460px;
+    height: auto;
+    min-height: 400px;
+    padding: 40px 40px 24px;
+    @media screen and (max-width: 500px) {
+        display: flex !important;
+        min-width: 400px;
+    }
+    @media screen and (max-width: 420px) {
+        display: flex !important;
+        min-width: 350px;
+    }
+    @media screen and (max-width: 360px) {
+        display: flex !important;
+        min-width: auto;
+        width: 100%;
+        padding: 32px 32px 16px 32px;
+    }
+}
+
+.mobile_version {
+    width: auto;
+    display: flex;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgScreenColor;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    font-size: 16px;
+    font-family: 'SF_SemiBold', sans-serif;
+    width: 254px;
+    text-align: center;
+}
+
+.subTitle {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    width: 328px;
+}
+
+.confTime {
+    margin-top: auto;
+    margin-bottom: 8px;
+}
+.inputWrap {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+
+    & input {
+        letter-spacing: 8px;
+        border: 2px solid #8D8D8D;
+        border-radius: 10px;
+        outline: none;
+        width: 300px;
+        height: 60px;
+        text-align: center;
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

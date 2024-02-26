@@ -1,0 +1,161 @@
+.wrap {
+    padding: 0px 0px 30px 20px;
+    @media (max-width: 900px) {
+        padding: 0px 6px 30px 6px;
+    }
+}
+
+.topMobile {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        font-size: 20px;
+        letter-spacing: 0.7px;
+        font-family: 'SF_Medium';
+        padding-bottom: 15px;
+    }
+
+    .topright {
+        display: flex;
+        flex-direction: column;
+
+        .inputbtn {
+            padding: 8.7px 20px;
+            background-color: white;
+            input {
+                margin-left: 10px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                width: 100%;
+            }
+            width: 100%;
+            border-radius: 35px;
+            margin-bottom: 6px;
+        }
+
+        .sort {
+            cursor: pointer;
+            color: white;
+            background: #a1a1af;
+            display: flex;
+            height: 40px;
+            gap: 8px;
+            border-radius: 35px;
+            width: 157px;
+            padding: 9px 25px 9px 25px;
+            margin-right: 9px;
+        }
+
+        .addbtn {
+            cursor: pointer;
+            background-color: #3579f8;
+            height: 40px;
+            color: white;
+            svg {
+                margin-right: 5px;
+            }
+            gap: 8px;
+            border-radius: 35px;
+            width: 157px;
+            padding: 9px 25px 9px 25px;
+            margin-left: 9px;
+        }
+        .btns {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 16px;
+        }
+    }
+}
+
+.top {
+    padding-right: 35px;
+    padding-bottom: 26px;
+
+    .title {
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: 0.7px;
+    }
+
+    .topright {
+        display: flex;
+
+        .sort {
+            cursor: pointer;
+            color: white;
+            border-radius: 15px 0px 0px 15px;
+            background: #a1a1af;
+            display: flex;
+            height: 40px;
+            padding: 11px 18px 11px 18px;
+            display: flex;
+            gap: 6px;
+        }
+
+        .inputbtn {
+            height: 100%;
+            padding: 8.7px 20px;
+            border-radius: 0px 15px 15px 0px;
+            background-color: white;
+            border: 1px solid rgba(53, 121, 248, 0.5);
+
+            input {
+                margin-left: 10px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+            }
+        }
+
+        .addbtn {
+            cursor: pointer;
+            margin-left: 20px;
+            border-radius: 15px;
+            background-color: #3579f8;
+            height: 40px;
+            padding: 0px 15px;
+            color: white;
+
+            svg {
+                margin-right: 5px;
+            }
+
+        }
+    }
+}
+
+.titleL {
+    font-size: 30px;
+    font-weight: 600;
+    @media (max-width: 900px) {
+        font-size: 22px;
+    }
+    @media (max-width: 420px) {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+    padding-bottom: 7px;
+}
+
+.blockText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.materialMobile {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.materials {
+    padding-bottom: 19px; 
+}

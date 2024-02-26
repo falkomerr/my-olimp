@@ -1,0 +1,23 @@
+.avatarAndAchievements {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.personalData {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (max-width: 900px) {
+    .personalData {
+        padding: 0 8px;
+    }
+}

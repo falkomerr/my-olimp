@@ -1,0 +1,55 @@
+$navBarHeight: 96px;
+$accent-color: #3579f8;
+.wrap {
+    position: fixed;
+    width: 100%;
+    height: $navBarHeight;
+    background-color: $accent-color;
+    z-index: 2000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+.switchNavbar {
+    color: white;
+    border: none;
+    background: none;
+    transition: all 0.3s;
+}
+
+.blockLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    float: left;
+}
+
+.blockRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    float: right;
+    width: 32px;
+    height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .wrap {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .wrap {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}

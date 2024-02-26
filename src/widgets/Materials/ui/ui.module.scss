@@ -1,0 +1,149 @@
+.mainMaterials {
+    display: flex;
+    gap: 24px;
+    @media (max-width: 1000px){
+        gap: 20px;
+    }
+    @media (max-width: 600px){
+        gap: 8px;
+    }
+
+    overflow: hidden;
+    overflow-x: scroll;
+    padding-bottom: 7px;
+    @media (max-width: 600px){
+        padding-bottom: 0px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 0.8em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #3579f8;
+        border: 3px solid white;
+        border-radius: 10px;
+        @media (max-width: 600px){
+            border: 6px solid white;
+        }
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        cursor: pointer !important;
+    }
+}
+
+.libraryMaterials {
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding-bottom: 7px;
+    @media (max-width: 600px){
+        padding-bottom: 0px;
+    }
+
+    @media (max-width: 1000px){
+        gap: 8px;
+    }
+
+    @media (max-width: 600px){
+        gap: 6px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 0.8em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #3579f8;
+        border: 3px solid white;
+        border-radius: 10px;
+        @media (max-width: 600px){
+            border: 6px solid white;
+        }
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        cursor: pointer !important;
+    }
+}
+
+
+.libraryWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+
+    & h1 {
+        font-size: 20px;
+        font-family: "SF_Regular", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+
+    &:hover * {
+        transition: all 0.3s;
+        color: #3579f8;
+    }
+}
+
+.titleWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 0 32px;
+
+    & * {
+        user-select: auto;
+        font-size: 17px;
+        font-family: "SF_Medium", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+
+    & h1 {
+        font-size: 25px;
+        margin: 0;
+        user-select: text;
+    }
+}
+
+.linkWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .link svg {
+        margin-top: 50px;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    // .wrapMaterials {
+    //   width: 100vw;
+    //   gap: 12px;
+    // }
+    .titleWrap {
+        & * {
+            font-size: 14px;
+        }
+
+        & h1 {
+            font-size: 16px;
+        }
+    }
+}
